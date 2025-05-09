@@ -1,7 +1,7 @@
-<H3>ENTER YOUR NAME: HARINI M D</H3>
-<H3>ENTER YOUR REGISTER NO. 212222230043</H3>
+<H3>NAME : HARINI M D</H3>
+<H3>REGISTER NO. : 212222230043</H3>
 <H3>EX. NO.5</H3>
-<H3>DATE:21-04-2025</H3>
+<H3>DATE: </H3>
 <H1 ALIGN =CENTER>Implementation of XOR  using RBF</H1>
 <H3>Aim:</H3>
 To implement a XOR gate classification using Radial Basis Function  Neural Network.
@@ -18,6 +18,9 @@ To implement a XOR gate classification using Radial Basis Function  Neural Netwo
 A Radial Basis Function Network (RBFN) is a particular type of neural network. The RBFN approach is more intuitive than MLP. An RBFN performs classification by measuring the input’s similarity to examples from the training set. Each RBFN neuron stores a “prototype”, which is just one of the examples from the training set. When we want to classify a new input, each neuron computes the Euclidean distance between the input and its prototype. Thus, if the input more closely resembles the class A prototypes than the class B prototypes, it is classified as class A ,else class B.
 A Neural network with input layer, one hidden layer with Radial Basis function and a single node output layer (as shown in figure below) will be able to classify the binary data according to XOR output.
 </P>
+
+
+
 
 
 <H3>ALGORITHM:</H3>
@@ -44,6 +47,7 @@ def gaussian_rbf(x, landmark, gamma=1):
 ```
 
 ### Main function for training and plotting
+
 ```python
 def end_to_end(X1, X2, ys, mu1, mu2):
     # Apply RBF transformation
@@ -129,10 +133,11 @@ print(f"Input:{np.array([1, 0])}, Predicted: {predict_matrix(np.array([1, 0]), w
 print(f"Input:{np.array([1, 1])}, Predicted: {predict_matrix(np.array([1, 1]), w)}")           
 ```
 
-
 <H3>OUTPUT:</H3>
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/de0e9488-b7b7-466c-b068-5df9581628af)
+
+![image](https://github.com/user-attachments/assets/05cec06b-fbbb-4756-9a57-6dac8f8aae87)
 
 <H3>Result:</H3>
 Thus , a Radial Basis Function Neural Network is implemented to classify XOR data.
